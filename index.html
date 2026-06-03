@@ -11,6 +11,15 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Mao & Gou Cellar">
 <meta name="theme-color" content="#2a0f16">
+<!-- Launched from the home-screen icon → jump straight in BEFORE any page paints.
+     Runs in <head> so a standalone launch shows no landing page at all. -->
+<script>
+  var APP = "https://script.google.com/macros/s/AKfycbxxaiEKUZWp6ugF7jeNxfKsjVOIbSsdhjQ-cAnhzkSV4dXb3qEtdP_B-fjvc7LIBY-b/exec";
+  if (window.navigator.standalone === true ||
+      (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches)) {
+    window.location.replace(APP);
+  }
+</script>
 <!-- Fallback redirect if JS is off -->
 <noscript><meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbxxaiEKUZWp6ugF7jeNxfKsjVOIbSsdhjQ-cAnhzkSV4dXb3qEtdP_B-fjvc7LIBY-b/exec"></noscript>
 <style>
@@ -47,10 +56,5 @@
   <h1>Mao &amp; Gou Cellar</h1>
   <a class="enter" href="https://script.google.com/macros/s/AKfycbxxaiEKUZWp6ugF7jeNxfKsjVOIbSsdhjQ-cAnhzkSV4dXb3qEtdP_B-fjvc7LIBY-b/exec" id="enter">Enter Cellar</a>
   <p class="hint">First time? Tap <b>Share → Add to Home Screen</b> to pin the icon.</p>
-<script>
-  var APP = "https://script.google.com/macros/s/AKfycbxxaiEKUZWp6ugF7jeNxfKsjVOIbSsdhjQ-cAnhzkSV4dXb3qEtdP_B-fjvc7LIBY-b/exec";
-  // Launched from the home-screen icon → go straight in.
-  if (window.navigator.standalone) { location.replace(APP); }
-</script>
 </body>
 </html>
