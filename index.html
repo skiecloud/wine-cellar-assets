@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mao &amp; Gou Cellar</title>
+<!-- Home-screen icon: served from this same (non-Google) origin so iOS reads it -->
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" href="icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mao & Gou Cellar">
+<meta name="theme-color" content="#2a0f16">
+<!-- Fallback redirect if JS is off -->
+<noscript><meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbxxaiEKUZWp6ugF7jeNxfKsjVOIbSsdhjQ-cAnhzkSV4dXb3qEtdP_B-fjvc7LIBY-b/exec"></noscript>
+<style>
+  :root { --brass:#d4b06a; --oxblood:#7b2233; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { height:100%; margin:0; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,serif;
+    color:#f3e7d8; text-align:center;
+    background:radial-gradient(120% 90% at 50% 28%, #4a1622 0%, #2a0f16 55%, #15080d 100%);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    min-height:100svh; padding:24px; gap:22px;
+  }
+  .glass { filter:drop-shadow(0 6px 18px rgba(0,0,0,.45)); }
+  h1 { font-family:"Cormorant Garamond",Georgia,serif; font-weight:600;
+       font-size:30px; letter-spacing:.5px; margin:0; }
+  p { margin:0; color:#caa; font-size:14px; max-width:18em; line-height:1.5; }
+  a.enter {
+    display:inline-block; margin-top:6px; padding:13px 30px; border-radius:999px;
+    background:var(--brass); color:#2a0f16; font-weight:600; font-size:16px;
+    text-decoration:none; letter-spacing:.3px;
+    box-shadow:0 4px 16px rgba(0,0,0,.4);
+  }
+  .hint { font-size:12px; color:#a98; opacity:.85; }
+  .hint b { color:var(--brass); font-weight:600; }
+</style>
+</head>
+<body>
+  <span class="glass"><svg width="84" height="108" viewBox="0 0 26 34" fill="none" aria-label="wine glass">
+    <path d="M5 3 H21 C21 11 17 15 13 15 C9 15 5 11 5 3 Z" stroke="#d4b06a" stroke-width="1.4"/>
+    <path d="M6.2 6 H19.8 C19 10.5 16 13.4 13 13.4 C10 13.4 7 10.5 6.2 6 Z" fill="#7b2233"/>
+    <path d="M13 15 V28 M7 30 H19" stroke="#d4b06a" stroke-width="1.4" stroke-linecap="round"/>
+  </svg></span>
+  <h1>Mao &amp; Gou Cellar</h1>
+  <a class="enter" href="https://script.google.com/macros/s/AKfycbxxaiEKUZWp6ugF7jeNxfKsjVOIbSsdhjQ-cAnhzkSV4dXb3qEtdP_B-fjvc7LIBY-b/exec" id="enter">Enter Cellar</a>
+  <p class="hint">First time? Tap <b>Share → Add to Home Screen</b> to pin the icon.</p>
+<script>
+  var APP = "https://script.google.com/macros/s/AKfycbxxaiEKUZWp6ugF7jeNxfKsjVOIbSsdhjQ-cAnhzkSV4dXb3qEtdP_B-fjvc7LIBY-b/exec";
+  // Launched from the home-screen icon → go straight in.
+  if (window.navigator.standalone) { location.replace(APP); }
+</script>
+</body>
+</html>
